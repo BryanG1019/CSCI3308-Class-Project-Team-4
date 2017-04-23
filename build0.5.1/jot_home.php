@@ -50,15 +50,8 @@ $(document).ready(function(){
 
   </center>
 
-  <div id="footer">
-    <br>
-    <img src="imgs/logo.png" />
-  </div>
-</body>
 
 
-
-<body>
 <img src='jot_background1.png' style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
 
 
