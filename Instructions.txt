@@ -32,7 +32,15 @@ sudo chmod 777 var
 sudo chmod 777 var/www
 sudo chmod 777 var/www/html
 
+//Install heroku 
+sudo apt-get install software-properties-common # debian only
+sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
+curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install heroku
 
+//Connect heroku to master
+heroku git:remote -a jotdb
 
 
 
