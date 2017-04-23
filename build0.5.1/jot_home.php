@@ -43,6 +43,18 @@ $(document).ready(function(){
 </header>
 
 
+<body class="login_body">
+  <center>
+
+    <a href="create_user.php" class="button">Create User Account</a>
+
+  </center>
+
+  <div id="footer">
+    <br>
+    <img src="imgs/logo.png" />
+  </div>
+</body>
 
 
 
