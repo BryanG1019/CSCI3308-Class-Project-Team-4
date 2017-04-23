@@ -28,14 +28,14 @@ $PasswordHash=$_REQUEST['PasswordHash'];
 
 //SQL query
 $sql="SELECT * FROM $tbl_name WHERE student_id='$student_id' and PasswordHash='$PasswordHash'";
-echo $sql;
 mysqli_query($connection, $sql);
-
-session_start();
-$_SESSION['loggedin'] = true;
-$_SESSION['student_id'] = $student_id;
+$count=mysqli_num_rows($result);
+if($count==1){
+	session_start();
+	$_SESSION['loggedin'] = true;
+	$_SESSION['student_id'] = $student_id;
+}
 header('Location:Login_screen.php');
-
 ?>
 
 
