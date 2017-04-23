@@ -42,6 +42,10 @@ sudo apt-get install heroku
 //Connect heroku to master
 heroku git:remote -a jotdb
 
+//update sql database from heroku
+mysqldump -u root -p jot simple_table > dump.sql
+mysql --host=us-cdbr-iron-east-03.cleardb.net --user=bf3287e6635b0e --password=1a1c5873 --reconnect heroku_cb7bf1773852b5c < dump.sql
+
 
 
 
