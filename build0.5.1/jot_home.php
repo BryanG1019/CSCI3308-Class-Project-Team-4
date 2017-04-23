@@ -24,7 +24,7 @@ $(document).ready(function(){
 <header class="header_main">
 <img src='jot_background1.png' style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
   <div class="Jot">
-    <h1><a href="jot_home.html" style="text-decoration:none">JOT!</a></h1>
+    <h1><a href="jot_home.php" style="text-decoration:none">JOT!</a></h1>
   </div>
 
   <nav class="main_nav"> <! Navigation Bar >
