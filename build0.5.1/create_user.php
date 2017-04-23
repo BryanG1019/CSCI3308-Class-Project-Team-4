@@ -11,7 +11,7 @@
     $(document).ready(function(){
       $('.button').click(function(){
         var clickBtnName = $(this).attr('name');
-        var ajaxurl = 'http://localhost/SQLDeleteHandler.php';
+        var ajaxurl = '/SQLDeleteHandler.php';
         var data = {'student_Id': clickBtnName};
         $.post(ajaxurl, data, function(response) {
           window.location.href="http://localhost/created_redirect.html";
