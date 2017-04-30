@@ -13,13 +13,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Login Form</title>
   <link href="jot_home.css" rel="stylesheet">
-  <img src='jot_background1.png' style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
 </head>
 
 <header class="header_main">
 
   <div class="Jot">
-    <h1><a href="jot_home.php" style="text-decoration:none">JOT!</a></h1>
+    <h1><a href="jot_home.html" style="text-decoration:none">JOT!</a></h1>
   </div>
 
   <nav class="main_nav"> <! Navigation Bar >
@@ -77,6 +76,12 @@
 <body>
 
 <h2>Note Database</h2>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select file to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload File" name="submit">
+</form>
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for notes.." title="Type in a name">
 

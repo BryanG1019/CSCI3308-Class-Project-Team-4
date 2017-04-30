@@ -35,7 +35,7 @@ if($count==1){
 	$_SESSION['loggedin'] = true;
 	$_SESSION['student_id'] = $student_id;
 }
-header('Location:note_database.php');
+header('Location:Login_screen.php');
 ?>
 
 
