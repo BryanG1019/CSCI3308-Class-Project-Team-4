@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+} else {
+	header('Location:Login_screen.php');
+}
 include("global.php");
 
 
@@ -7,8 +13,13 @@ $username = $_SESSION['username'];
 $password = $_SESSION['password'];
 $db_name = $_SESSION['db_name'];
 $tbl_name = $_SESSION['tbl_name'];
+$student_id = $_SESSION['student_id'];
 
-$target_dir = "uploads/";
+$oldmask = umask(0);
+mkdir("uploads/$student_id/", 0777);
+umask($oldmask);
+
+$target_dir = "uploads/$student_id/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
