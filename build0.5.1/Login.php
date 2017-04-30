@@ -28,7 +28,7 @@ $PasswordHash=$_REQUEST['PasswordHash'];
 
 //SQL query
 $sql="SELECT * FROM $tbl_name WHERE student_id='$student_id' and PasswordHash='$PasswordHash'";
-mysqli_query($connection, $sql);
+$result = mysqli_query($connection, $sql);
 $count=mysqli_num_rows($result);
 if($count==1){
 	session_start();
