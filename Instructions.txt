@@ -31,6 +31,7 @@ sudo service apache2 restart
 sudo chmod 777 var
 sudo chmod 777 var/www
 sudo chmod 777 var/www/html
+sudo chown apache:apache /var/www/html/uploads/
 
 //Install heroku 
 sudo apt-get install software-properties-common # debian only
