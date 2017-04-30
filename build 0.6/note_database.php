@@ -13,6 +13,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Login Form</title>
   <link href="jot_home.css" rel="stylesheet">
+  <img src='jot_background1.png' style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
 </head>
 
 <header class="header_main">
