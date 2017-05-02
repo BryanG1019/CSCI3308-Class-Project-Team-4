@@ -14,7 +14,7 @@
         var ajaxurl = '/SQLDeleteHandler.php';
         var data = {'student_Id': clickBtnName};
         $.post(ajaxurl, data, function(response) {
-          window.location.href="http://localhost/created_redirect.html";
+          window.location.href="created_redirect.html";
         });
       });
     });
